@@ -3,18 +3,21 @@ body, ul {
     margin: 0;
     padding: 0;
 }
-
-
-body {
-    font-family: Arial, sans-serif;
+body{
+  font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+}
+
+.whole {
+    
+   padding-left: 8.5%;
 }
 
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px ;
 }
 
 nav ul {
@@ -70,10 +73,17 @@ nav ul li a {
 
 
 .about, .lessons, .events, .contact {
-    padding: 50px;
-    background-color: #fff;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  background-color: #fff;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  min-height: 300px;
+  
 }
 
 .about h2, .lessons h2, .events h2, .contact h2{
@@ -93,6 +103,9 @@ footer, a	{
 color: whitesmoke;
 }
 
+  
+
+
 section:hover{
 	background-color:white;
 	transform: scale(1.01);
@@ -100,10 +113,10 @@ section:hover{
 }
 .piano-icon {
     position: absolute;
-    top: 40px;
+    top: 35px;
     right: 20px;
-    width: 15%;
-    height: 8%;
+    width: 100px;
+    height: 100px;
     z-index: 999;
     transition: transform 0.3s ease; 
 }
@@ -342,100 +355,6 @@ section:hover{
     background: transparent;
     z-index: 1;
 }
-/* Common Styles */
-body, ul {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  position: relative;
-}
-
-nav ul {
-  list-style: none;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.hero {
-  text-align: center;
-  padding: 100px 0;
-}
-
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-/* Mobile-First Responsive Styles */
-.about, .lessons, .events, .contact {
-  padding: 20px;
-  background-color: #fff;
-  margin: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.about h2, .lessons h2, .events h2, .contact h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-/* Header Icon */
-.piano-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
-  z-index: 999;
-  transition: transform 0.3s ease;
-}
-
-@media (min-width: 768px) {
-
-  .hero {
-      padding: 50px 0;
-  }
-
-  .about, .lessons, .events, .contact {
-      padding: 30px;
-  }
-
-  .piano-icon {
-      top: 35px;
-      right: 20px;
-      width: 100px;
-      height: 100px;
-  }
-}
-
-@media (min-width: 1024px) {
-  
-  .hero {
-      padding: 70px 0;
-  }
-}
-
 
 
   
